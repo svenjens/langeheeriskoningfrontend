@@ -11,6 +11,7 @@ class EntitiesScreen extends React.Component {
     return (
       <ScrollView style={styles.container}>
         <Text style={{ textAlign: 'center' }}>JHipster Entities will appear below</Text>
+        <RoundedButton text='Artist' onPress={NavigationActions.artistEntity} />
         {/* ignite-jhipster-entity-screen-needle */}
       </ScrollView>
     )

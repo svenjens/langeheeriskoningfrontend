@@ -11,6 +11,9 @@ import EntitiesScreen from '../Containers/EntitiesScreen'
 import SettingsScreen from '../Containers/SettingsScreen'
 import ChangePasswordScreen from '../Containers/ChangePasswordScreen'
 import ForgotPasswordScreen from '../Containers/ForgotPasswordScreen'
+import ArtistEntityScreen from '../Containers/ArtistEntityScreen'
+import ArtistEntityDetailScreen from '../Containers/ArtistEntityDetailScreen'
+import ArtistEntityEditScreen from '../Containers/ArtistEntityEditScreen'
 // ignite-jhipster-navigation-import-needle
 
 /* **************************
@@ -35,6 +38,9 @@ class NavigationRouter extends Component {
             <Scene key='settings' component={SettingsScreen} title='Settings' back drawerLockMode='locked-closed' />
             <Scene key='changePassword' component={ChangePasswordScreen} title='Change Password' back drawerLockMode='locked-closed' />
             <Scene key='forgotPassword' component={ForgotPasswordScreen} title='Forgot Password' back drawerLockMode='locked-closed' />
+            <Scene key='artistEntity' component={ArtistEntityScreen} title='Artists' back drawerLockMode='locked-closed' />
+            <Scene key='artistEntityDetail' component={ArtistEntityDetailScreen} title='Artist' back drawerLockMode='locked-closed' />
+            <Scene key='artistEntityEdit' component={ArtistEntityEditScreen} title='Artist' back drawerLockMode='locked-closed' />
             {/* ignite-jhipster-navigation-needle */}
           </Stack>
         </Drawer>

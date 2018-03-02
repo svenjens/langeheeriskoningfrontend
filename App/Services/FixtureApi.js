@@ -2,6 +2,30 @@ export default {
   // Functions return fixtures
 
   // entity fixtures
+
+  updateArtist: (artist) => {
+    return {
+      ok: true,
+      data: require('../Fixtures/updateArtist.json')
+    }
+  },
+  getArtists: () => {
+    return {
+      ok: true,
+      data: require('../Fixtures/getArtists.json')
+    }
+  },
+  getArtist: (artistId) => {
+    return {
+      ok: true,
+      data: require('../Fixtures/getArtist.json')
+    }
+  },
+  deleteArtist: (artistId) => {
+    return {
+      ok: true
+    }
+  },
   // ignite-jhipster-api-fixture-needle
 
   // auth fixtures

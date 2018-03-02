@@ -44,6 +44,11 @@ const create = (baseURL = AppConfig.apiUrl) => {
   const getAccount = () => api.get('api/account')
   const updateAccount = (account) => api.post('api/account', account)
   const changePassword = (newPassword) => api.post('api/account/change-password', newPassword, {headers: {'Content-Type': 'text/plain', 'Accept': 'application/json, text/plain, */*'}})
+
+  const getArtist = (artistId) => api.get('api/artists/' + artistId)
+  const getArtists = (options) => api.get('api/artists', options)
+  const updateArtist = (artist) => api.put('api/artists', artist)
+  const deleteArtist = (artistId) => api.delete('api/artists/' + artistId)
   // ignite-jhipster-api-method-needle
 
   // ------
@@ -60,6 +65,11 @@ const create = (baseURL = AppConfig.apiUrl) => {
   //
   return {
     // a list of the API functions from step 2
+
+    updateArtist,
+    getArtists,
+    getArtist,
+    deleteArtist,
     // ignite-jhipster-api-export-needle
     setAuthToken,
     removeAuthToken,

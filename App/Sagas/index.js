@@ -10,6 +10,7 @@ import { LoginTypes } from '../Redux/LoginRedux'
 import { RegisterTypes } from '../Redux/RegisterRedux'
 import { PasswordTypes } from '../Redux/PasswordRedux'
 import { AccountTypes } from '../Redux/AccountRedux'
+import { ArtistTypes } from '../Redux/ArtistRedux'
 // ignite-jhipster-saga-redux-import-needle
 
 /* ------------- Sagas ------------- */
@@ -19,6 +20,7 @@ import { login, logout, loginLoad } from './LoginSagas'
 import { register } from './RegisterSagas'
 import { forgotPassword, changePassword } from './PasswordSagas'
 import { getAccount, updateAccount } from './AccountSagas'
+import { getArtist, getArtists, updateArtist, deleteArtist } from './ArtistSagas'
 // ignite-jhipster-saga-method-import-needle
 
 /* ------------- API ------------- */
@@ -41,6 +43,11 @@ export default function * root () {
     takeLatest(RegisterTypes.REGISTER_REQUEST, register, api),
     takeLatest(PasswordTypes.FORGOT_PASSWORD_REQUEST, forgotPassword, api),
     takeLatest(PasswordTypes.CHANGE_PASSWORD_REQUEST, changePassword, api),
+
+    takeLatest(ArtistTypes.ARTIST_REQUEST, getArtist, api),
+    takeLatest(ArtistTypes.ARTIST_ALL_REQUEST, getArtists, api),
+    takeLatest(ArtistTypes.ARTIST_UPDATE_REQUEST, updateArtist, api),
+    takeLatest(ArtistTypes.ARTIST_DELETE_REQUEST, deleteArtist, api),
     // ignite-jhipster-saga-redux-connect-needle
 
     takeLatest(AccountTypes.ACCOUNT_REQUEST, getAccount, api),
