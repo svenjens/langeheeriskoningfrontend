@@ -1,0 +1,38 @@
+{
+	"generator-jhipster": {
+		"promptValues": {
+			"packageName": "nl.langeheer",
+			"nativeLanguage": "nl"
+		},
+		"jhipsterVersion": "4.14.1",
+		"baseName": "langeheer",
+		"packageName": "nl.langeheer",
+		"packageFolder": "nl/langeheer",
+		"serverPort": "8080",
+		"authenticationType": "jwt",
+		"cacheProvider": "ehcache",
+		"enableHibernateCache": true,
+		"websocket": false,
+		"databaseType": "sql",
+		"devDatabaseType": "h2Disk",
+		"prodDatabaseType": "mysql",
+		"searchEngine": false,
+		"messageBroker": false,
+		"serviceDiscoveryType": false,
+		"buildTool": "maven",
+		"enableSocialSignIn": false,
+		"enableSwaggerCodegen": false,
+		"jwtSecretKey": "f2c807d658b6d4af68bf204e47e0730467b82ccd",
+		"clientFramework": "angularX",
+		"useSass": false,
+		"clientPackageManager": "yarn",
+		"applicationType": "monolith",
+		"testFrameworks": [],
+		"jhiPrefix": "jhi",
+		"enableTranslation": true,
+		"nativeLanguage": "nl",
+		"languages": [
+			"nl"
+		]
+	}
+}
